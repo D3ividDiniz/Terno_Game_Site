@@ -1,0 +1,298 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond&family=Dongle:wght@300&family=Orelega+One&family=Patrick+Hand&display=swap');
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */ 
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3e2213
+}
+.body{
+    position:fixed;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3e221300;
+    display: flex;
+    flex-direction: column;
+
+}
+h1{
+    font-weight: normal;
+}
+h3{
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+/*Box model stuff*/
+    height: 30px;
+    margin: 0 8px;
+    padding: 0 20px;
+    border: solid 2px #9d53318e;
+    border-radius:10px;
+    background-color: #3b1e0f;
+/*Typography stuff*/
+    font-family: 'Orelega One';
+    font-weight: normal;
+    color: #f99c71;
+
+}
+.botao:hover{
+/*Box model stuff*/
+    background-color: #311708;
+/*Typography stuff*/
+    color: white;
+/*Miscellaneous*/
+    cursor: pointer;
+    box-shadow: 0 0 30px #1c0a0054;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.bottom{
+    width: 100vw;
+    justify-content: center;
+    flex-direction: initial;
+}
+.d1, .d2{
+    display: none;
+}
+
+/* Mapa */
+#bodi {
+/*Display stuff*/
+    display: flex;
+    justify-content: center;
+/*Box model stuff*/
+    width: 100vw;
+    height: 430px;
+    padding: 30px 0 0 0;
+    background-color: rgba(134, 33, 50, 0);
+}
+#corpo {
+/*Display stuff*/
+    display: flex;
+    flex-wrap: wrap;
+/*Box model stuff*/
+    width: 320px;
+    min-width: 320px;
+    height: 380px;
+    padding:20px;
+    border: solid 2px #ee814720 ;
+/*Miscellaneous*/
+    gap: 5px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+.letra{
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*Box model stuff*/
+    width: 50px;
+    height: 50px;
+    border: outset     1px #b8400042;
+    border-radius:5px;
+    background-color: #391e10;
+/*Typography stuff*/
+    font-family: 'Orelega One';
+    font-size:200%;
+    color: #fcefe9;
+/*Miscellaneous*/
+    box-shadow: 0px 0px 5px #3d17020c;
+}
+
+/* Cabeçalho */
+header{
+/*Display stuff*/
+    display: flex;
+    justify-content: center;
+/*Box model stuff*/
+    width: 100vw;
+    height: 60px;
+    border-radius: 0 0 20px 20px;
+    background-color: #3b1e0f;
+/*Miscellaneous*/
+    box-shadow: 0 0 35px #180801a8;
+}
+h1.titulo{
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+/*Typography stuff*/
+    font-family: 'Abril Fatface';
+    font-size: 43px;
+    font-weight: 300;
+    text-align: center;
+    color: #EE8247 ;
+    text-shadow: 0px 0px 16px #703413ac;
+
+
+}
+h2{
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+/*Box model stuff*/
+    width: 100px;
+/*Typography stuff*/
+    font-family:'Dongle';
+    font-size: 15px;
+    font-weight: normal;
+    color:#d6ad96;
+/*Miscellaneous*/
+    line-height:9px;
+}
+hr{
+/*Box model stuff*/
+    height:80%;
+    margin: 6px 10px 0 10px;
+    border: 1px solid #d98558}
+
+/* Teclado */
+.keyboard{
+/*Box model stuff*/
+    width:100vw;
+    height:25%;
+    padding: 0 20%;
+    border-collapse: separate;
+    border-spacing: 7px 8px;
+    z-index: 6;
+}
+td{
+/*Box model stuff*/
+    width: 20px;
+    height:33%;
+    border:none;
+    border-bottom: solid 1px #693c25bd;
+    border-radius: 10px;
+    background-color: red;
+    background-color:#49210b;
+/*Typography stuff*/
+    text-align:center;
+    color: #ee81479d;
+/*Miscellaneous*/
+    cursor: pointer;
+    box-shadow: 0 0 4px #9a4d240c;
+
+
+
+}
+td:hover{
+/*Box model stuff*/
+    background-color:#39150265;
+/*Typography stuff*/
+    color: #ffffff;
+/*Miscellaneous*/
+    transition-timing-function:1s;
+}
+
+/* Responsividade */
+    @media screen and (max-width: 479px){
+        body{
+            height:80%;
+        }
+        header{
+            height: 100px;
+        }
+        h1.titulo{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 20px;
+            width: 100px;
+            line-height:12px;
+        }
+        .keyboard{
+            height:25%;
+            padding: 4px 2%;
+            margin: 11% 0 10px 0;
+    
+
+
+        }
+        td{
+            height:34%;
+            width: 10%;
+            margin:0;
+
+        }
+    }
+    @media screen and (min-width: 479px) and (max-width: 768px){
+        header{
+            height: 80px;
+        }
+        h2{
+            font-size: 20px;
+            width: 130px;
+        }
+        .keyboard{
+            height:25%;
+            padding: 0px 2% 20px;
+            margin: auto 0 0 0;
+    
+
+
+        }
+        td{
+            height:33%;
+            width: 10%;
+            margin:0;
+
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 915px) and (min-height:1025px){
+        header{
+            height: 100px;
+        }
+        h2{
+            font-size: 30px;
+            width: 200px;
+            line-height:15px;
+        }
+        h1.titulo{
+            font-size: 70px;
+        }
+        .keyboard{
+            height:25%;
+            padding: 5px 2%;
+            margin: auto 0 0 0;
+        }
+        #corpo{
+            min-width: 320px;
+            height: calc(380px *1.3);
+            width: calc(320px * 1.3);
+            gap: 16px;
+            
+
+        }
+        .letra{
+            color: #fcefe9;
+            background-color: #391e10;
+            border: outset     1px #b8400042;
+            height: 60px;
+            width: 60px;
+            border-radius:5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Orelega One';
+            font-size:300%;
+        }
+    }

@@ -1,0 +1,118 @@
+LIXO ELETRONICO 
+
+#estatisca{
+    height: 100vh;
+    min-width: 150px;
+    width: 20%; 
+    position: fixed;
+    z-index: 1;
+    background-color: #290f04;
+    left: 99%; 
+    /* 98% */
+}
+#estatisca_push{
+    height: 40px;
+    width: 40px; 
+    position: fixed;
+    z-index: 2;
+    background-color:#290f04;
+    left:98%; 
+    border-radius: 10px;
+    /* 98% */
+}
+#estatisca:hover{
+    left: calc(100% - 20%);
+    box-shadow:0 0 10px #290f04;
+    transition: 0.5s;
+}
+
+h2.esta{
+
+    height:30px;
+    padding: 40px 0 4px 0;
+    
+}
+h4.esta{
+    /*Display stuff*/
+        display: flex;
+        align-items: center;
+    /*Box model stuff*/
+        height: 34px;
+        margin: 20px 5px 0 8px;
+        padding: 0px 0px 0px 10px;
+        border-right: solid 2px #9d53318e;
+        border-radius: 4px 0 0 5px;
+        background-color: #3b1e0f;
+    /*Typography stuff*/
+        font-family: 'Orelega One';
+        font-weight: normal;
+        color: #f99c71;
+    
+    }
+
+/* Responsividade */
+@media screen and (max-width: 479px){
+    .instruction_subbox{
+        margin: 16px;
+        width: 80%;
+
+    }
+    .informativ_text{
+        width: 80%;
+    
+    }
+    .informativ_text.b{
+        font-size: 16px;
+        text-indent: 1.5em;
+        width: 80%;
+        margin: 6% 0 0 0;
+    }
+}
+@media screen and (max-width: 768px){
+
+    #estatisca:hover{
+        left: calc(100% - 21%);
+        box-shadow:0 0 10px #290f04;
+        transition: 0.5s;
+    }
+    h2.esta{
+        height:30px;
+        padding: 40px 0 6px 0;
+
+    }
+    h4.esta{
+        /*Display stuff*/
+            display: flex;
+            align-items: center;
+        /*Box model stuff*/
+            height: 30px;
+            margin: 20px 5px 0 8px;
+            padding: 0px 0px 0px 10px;
+            border-right: solid 2px #9d53318e;
+            border-radius: 4px 0 0 5px;
+            background-color: #3b1e0f;
+        /*Typography stuff*/
+            font-family: 'Orelega One';
+            font-weight: normal;
+            color: #f99c71;
+            font-size: 10px;
+        
+        }
+
+}
+@media screen and (max-width: 549px){
+    #estatisca:hover{
+        left: calc(100% - 30%);
+        box-shadow:0 0 10px #290f04;
+        transition: 0.5s;
+    }
+
+}
+@media screen and (max-width: 405px){
+    #estatisca:hover{
+        left: calc(100% - 37%);
+        box-shadow:0 0 10px #290f04;
+        transition: 0.5s;
+    }
+
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Têrmo</title>
+    <link rel="icon" href="assets/ico_terno.svg" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/further.css" />
+  </head>
+  <body>
+    <!-- Instruções -->
+    <div id="instruction">
+      <h1 class="titulo" style="font-size: 30px">Instruções</h1>
+      <hr style="height: 0px; width: 45%; margin: 5px 0 0 0" />
+
+      <p class="informativ_text b" align="justify">
+        Em 6 tentativas tente acertar a palavra, jogue com amigos e busque o
+        maior score do seu grupo.
+      </p>
+
+      <div class="instruction_subbox" style="margin: 3% 0 0 0">
+        <div class="letra" style="background-color: #672400">D</div>
+        <p class="informativ_text">
+          "A letra está na palavra e na posição certa."
+        </p>
+      </div>
+      <div class="instruction_subbox">
+        <div class="letra" style="background-color: #cd982d">W</div>
+        <p class="informativ_text">
+          "A letra está na palavra, mas não na posição certa."
+        </p>
+      </div>
+      <h3
+        style="background-color: rgba(0, 0, 0, 0); margin: 15px"
+        class="botao"
+        onclick="instruction()"
+      >
+        Entendi
+      </h3>
+    </div>
+
+    <!-- Estatistic bar -->
+
+    <div id="estatisca_box">
+      <div id="estatisca">
+        <h2 class="esta">Estatisticas</h2>
+        <h4 class="esta">
+          Score: <br />
+          <strong id="score-e">0 pts</strong>
+        </h4>
+        <h4 class="esta">
+          Acertos: <br />
+          <strong id="acerto-e">0 pts</strong>
+        </h4>
+        <h4 class="esta">
+          Maior Score: <br />
+          <strong id="max-e">0 pts</strong>
+        </h4>
+      </div>
+    </div>
+
+    <!-- Tela Suspennsa RESULTADO-->
+    <div id="vencedor">
+      <h1 class="titulo">Acertou</h1>
+      <span id="palavra" style="font-family: monospace; color: #d6ad96"></span>
+      <div>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+      </div>
+
+      <hr
+        style="
+          width: 350px;
+          height: 0px;
+          margin: 4px 0px 16px 0;
+          border: 1px solid #d9855854;
+        "
+      />
+      <div class="center bottom">
+        <h3 class="botao" id="d1" onclick="proxima('1')">Próxima</h3>
+        <h3 class="botao" id="d2" onclick="proxima('2')">Reniciar</h3>
+        <h3
+          id="score"
+          style="
+            border: none;
+            background-color: #3b1e0f;
+            box-shadow: inset 0px 0px 6px #201007b1;
+          "
+        >
+          Score: 0 pontos
+        </h3>
+      </div>
+    </div>
+
+    <div class="body">
+      <!-- Cabeçalho -->
+      <header>
+        <h1 class="titulo">Têrno</h1>
+        <hr />
+        <h2>Que revela suavidade, brandura.</h2>
+      </header>
+
+      <!-- Tela Suspensa ERRO -->
+      <div id="error"><h1 class="erro"></h1></div>
+
+      <!-- Mapa -->
+      <div id="bodi">
+        <main id="corpo"></main>
+      </div>
+
+      <!-- Teclado -->
+      <table class="keyboard">
+        <tr>
+          <td>Q</td>
+          <td>W</td>
+          <td>E</td>
+          <td>R</td>
+          <td>T</td>
+          <td>Y</td>
+          <td>U</td>
+          <td>I</td>
+          <td>O</td>
+          <td>P</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>S</td>
+          <td>D</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+          <td colspan="2">Back</td>
+        </tr>
+        <tr>
+          <td>Z</td>
+          <td>X</td>
+          <td>C</td>
+          <td>V</td>
+          <td>B</td>
+          <td>N</td>
+          <td>M</td>
+          <td colspan="2">ENTER</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main/product.js"></script>
+    <script src="main/index.js"></script>
+  </body>
+</html>
