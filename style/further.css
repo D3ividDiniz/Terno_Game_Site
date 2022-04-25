@@ -8,6 +8,14 @@
     }
 }
 
+@keyframes opacidade{
+    from{
+        opacity: 1;
+    }to{
+opacity: 0;
+    }
+}
+
 /* Swipe Cards*/
 #vencedor{
     /*Display stuff*/
@@ -114,6 +122,10 @@
 /*Typography stuff*/
     font-size: 19px;
     text-indent: 1.5em;
+}
+#version{
+    animation: opacidade 3s linear;
+    opacity: 0;
 }
 
 /* estatisca */
