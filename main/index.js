@@ -150,7 +150,7 @@ function next(){
                 if(change_letter(dl.textContent) == change_letter(sortd_pa[cont]).toUpperCase()){
                     dl.style.backgroundColor = "#672400"; 
                     clarear(dl.textContent,0)
-                }else if(change_word(sortd_pa).indexOf(change_letter(dl.textContent).toLowerCase())>0){
+                }else if(change_word(sortd_pa).indexOf((dl.textContent).toLowerCase())>=0){
                     dl.style.backgroundColor = "#cd982d"
                     clarear(dl.textContent,1)
                 }else{
